@@ -20,18 +20,18 @@ You can install the module using git or npm:
 
 *GIT*
 ```bash
-git clone https://github.com/serhiihonchargithub/lite_pagination.git
+git clone https://github.com/serhiihonchargithub/lite-pagination.git
 ```
 
 *NPM*
 ```bash
-npm install --save lite_pagination@1.0.0
+npm install --save lite-pagination@1.0.0
 ```
 
 ## Usage
 ```javascript
 // Importing the module
-let pagination = require('path/to/lite_pagination');
+let pagination = require('path/to/lite-pagination');
 ```
 ## Example Usage
 

@@ -1,5 +1,5 @@
 {
-  "name": "lite_pagination",
+  "name": "lite-pagination",
   "version": "1.0.0",
   "description": "Pagination for API",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/serhiihonchargithub/pagination.git"
+    "url": "git+https://github.com/serhiihonchargithub/lite-pagination.git"
   },
   "author": "Serhii Honchar",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/serhiihonchargithub/lite_pagination/issues"
+    "url": "https://github.com/serhiihonchargithub/lite-pagination/issues"
   },
-  "homepage": "https://github.com/serhiihonchargithub/lite_pagination#readme"
+  "homepage": "https://github.com/serhiihonchargithub/lite-pagination#readme"
 }
