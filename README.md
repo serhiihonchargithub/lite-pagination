@@ -1,7 +1,17 @@
 # Pagination Module
+
+This Node.js module is utilized for crafting a pagination API. For example, if you need pagination on the frontend similar to what is shown in the image.
 <img src="./pagination.jpg" alt="img">
 
-This module is a package for handling pagination in Node.js applications.
+To accomplish this, you will require an API. This script is very straightforward. Simply integrate this script into your project following the instructions.
+
+This module takes three arguments:
+
+<ul>
+    <li>count - This is the number of posts returned from your database or another external source.</li>
+    <li>offset - It represents how many posts need to be skipped, for instance, if you are not on the first page.</li>
+    <li>limit - This is the limit of posts displayed per page.</li>
+</ul>
 
 ## Installation
 
@@ -33,7 +43,7 @@ console.log(result);
 
 ## Return
 ```json
-"pagination": {
+"pagination" : {
     "count": {
       "posts": 282,
       "pages": 11
