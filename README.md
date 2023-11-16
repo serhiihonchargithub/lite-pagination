@@ -1,6 +1,7 @@
 # Pagination Module
 
 This Node.js module is utilized for crafting a pagination API. For example, if you need pagination on the frontend similar to what is shown in the image.
+
 <img src="./pagination.jpg" alt="img">
 
 To accomplish this, you will require an API. This script is very straightforward. Simply integrate this script into your project following the instructions.
