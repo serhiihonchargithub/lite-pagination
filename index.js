@@ -1,5 +1,5 @@
 module.exports = {
-    pagination: function(count, offset, limit) {
+    pagination : function(count, offset, limit) {
         let totalCount = count
         let prevOffset = Math.max(0, offset - limit)
         let nextOffset = offset + limit;
@@ -9,9 +9,9 @@ module.exports = {
 
         function getNavItem(number, offset, current) {
             return {
-                number: number,
-                offset: offset,
-                current: current
+                number : number,
+                offset : offset,
+                current : current
             }
         }
 
@@ -29,27 +29,29 @@ module.exports = {
         ]
 
         return {
-            control: {
-                prev: offset != 0 ? {
-                    number: Math.ceil(prevOffset / limit) + 1,
-                    offset: prevOffset
-                } : null,
-                current: {
-                    number: Math.ceil((offset + 1) / limit),
-                    offset: offset
-                },
-                next: nextOffset <= lastPageOffset ? {
-                    number: Math.ceil(nextOffset / limit) + 1,
-                    offset: nextOffset
-                } : null,
-                last: {
-                    number: Math.ceil(lastPageOffset / limit) + 1,
-                    offset: lastPageOffset
-                },
-                totalCount: totalCount,
-                currentPageNumber: currentPageNumber
+            count : {
+                posts : totalCount,
+                pages : currentPageNumber
             },
-            nav: navPages
+            control : {
+                prev : offset != 0 ? {
+                    number : Math.ceil(prevOffset / limit) + 1,
+                    offset : prevOffset
+                } : null,
+                current : {
+                    number : Math.ceil((offset + 1) / limit),
+                    offset : offset
+                },
+                next : nextOffset <= lastPageOffset ? {
+                    number : Math.ceil(nextOffset / limit) + 1,
+                    offset : nextOffset
+                } : null,
+                last : {
+                    number : Math.ceil(lastPageOffset / limit) + 1,
+                    offset : lastPageOffset
+                }
+            },
+            nav : navPages
         }
     }
 }
