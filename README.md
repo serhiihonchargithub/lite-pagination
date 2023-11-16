@@ -1,4 +1,4 @@
-# Pagination Module
+# Light Pagination Module
 
 This Node.js module is utilized for crafting a pagination API. For example, if you need pagination on the frontend similar to what is shown in the image.
 
@@ -20,18 +20,18 @@ You can install the module using git or npm:
 
 *GIT*
 ```bash
-git clone https://github.com/serhiihonchargithub/pagination.git
+git clone https://github.com/serhiihonchargithub/lite_pagination.git
 ```
 
 *NPM*
 ```bash
-npm install --save path/to/pagination
+npm install --save lite_pagination@1.0.0
 ```
 
 ## Usage
 ```javascript
 // Importing the module
-let pagination = require('path/to/pagination');
+let pagination = require('path/to/lite_pagination');
 ```
 ## Example Usage
 
