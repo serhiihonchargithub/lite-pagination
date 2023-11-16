@@ -34,9 +34,12 @@ npm install --save path/to/pagination
 let pagination = require('path/to/pagination');
 ```
 ## Example Usage
+
+For example, you have an address like **domain/posts?offset=50&limit=5** in your API. The script behind it sends a request to the database, and the database returns the count of posts as 285. Your limit is set to 5, and you are currently on page 50.
+
 ```javascript
 // Using the pagination function
-let result = pagination.pagination(count, offset, limit);
+let result = pagination.pagination(285, 50, 5);
 
 // Example output
 console.log(result);
@@ -46,7 +49,7 @@ console.log(result);
 ```json
 "pagination" : {
     "count": {
-      "posts": 282,
+      "posts": 285,
       "pages": 11
     },
     "control": {
