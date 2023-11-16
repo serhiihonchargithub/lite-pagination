@@ -1,5 +1,33 @@
 # Pagination Module
-
+<nav class="pagination_preview__nav">
+    <ul>
+        <li title="This is prev page">Prev</li>
+        <li title="This is page First">1</li>
+        <li title="This is 10 pages ago">...</li>
+        <li title="This is page 2">2</li>
+        <li title="This is page 3, and this page active" class="active">3</li>
+        <li title="This is page 4">4</li>
+        <li title="This is 10 pages letter">...</li>
+        <li title="This is page Last">25</li>
+        <li title="This is next page">Next</li>
+    </ul>
+</nav>
+<style>
+.pagination_preview__nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+.pagination_preview__nav ul li {
+    border-radius: 3px;
+    border: solid 1px #dedede;
+    padding: 0 10px;
+}
+</style>
 This module is a package for handling pagination in Node.js applications.
 
 ## Installation
